@@ -11,7 +11,7 @@ body {
 }
 
 /* layout */
-.grid-layout {
+.grid-container {
     display: grid;
     grid-template-areas: 
     'header'
