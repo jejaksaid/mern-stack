@@ -38,3 +38,10 @@ footer {
     background-color: #203040;
     color: #ffffff;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
