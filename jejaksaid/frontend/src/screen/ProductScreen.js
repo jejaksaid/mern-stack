@@ -15,7 +15,7 @@ export default function ProductScreen(props) {
 				<div className="col-2">
 					<img className="large" src={product.image} alt={product.name} />
 				</div>
-				<div className="col-1">
+				<div className="col-2">
 					<ul>
 						<li>{product.name}</li>
 						<li>
