@@ -1,0 +1,15 @@
+.main-page {
+	display: flex;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.left {
+	flex: 1;
+	background-color: gray;
+}
+
+.right {
+	width: 460px;
+	background-color: blue;
+}
