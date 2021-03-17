@@ -10,7 +10,7 @@ const Register = () => {
 				<img src={RegisterBg} className="bg-image" alt="imageBg" />
 			</div>
 			<div className="right">
-				<p>Register</p>
+				<p className="title">Register</p>
 				<Input label="Full Name" placeholder="Full Name" />
 				<Input label="Email" placeholder="Email" />
 				<Input label="Password" placeholder="Password" />
