@@ -1,19 +1,23 @@
 import React from "react";
-import { RegisterBg } from "../../assets";
-import { Input, Button } from "../../components/atoms";
+import { LoginBg } from "../../assets";
+import { Input, Button, Gap, Link } from "../../components/atoms";
 
 const Login = () => {
 	return (
 		<div className="main-page">
 			<div className="left">
-				<img src={RegisterBg} className="bg-image" alt="imageBg" />
+				<img src={LoginBg} className="bg-image" alt="imageBg" />
 			</div>
+
 			<div className="right">
-				<p className="title">Login</p>
-				<Input label="Full Name" placeholder="Full Name" />
+				<p className="title ">Login</p>
 				<Input label="Email" placeholder="Email" />
+				<Gap height={18} />
 				<Input label="Password" placeholder="Password" />
-				<Button title="Register" />
+				<Gap height={50} />
+				<Button title="Login" />
+				<Gap height={100} />
+				<Link title="Daftar akun baru" />
 			</div>
 		</div>
 	);
