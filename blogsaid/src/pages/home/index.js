@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../components";
+import { BlogItem, Button } from "../../components";
 import "./home.scss";
 
 const Home = () => {
@@ -8,11 +8,7 @@ const Home = () => {
 			<div className="create-wrapper">
 				<Button title="create blog post" />
 			</div>
-			<p>Blog content</p>
-			<p>Blog content</p>
-			<p>Blog content</p>
-			<p>Blog content</p>
-			<p>Blog content</p>
+			<BlogItem />
 			<p>Pagination</p>
 		</div>
 	);
