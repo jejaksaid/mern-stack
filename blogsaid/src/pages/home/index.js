@@ -4,7 +4,7 @@ import { Button } from "../../components";
 const Home = () => {
 	return (
 		<div>
-			<div>
+			<div className="create-wrapper">
 				<Button title="create blog post" />
 			</div>
 			<p>Blog content</p>
