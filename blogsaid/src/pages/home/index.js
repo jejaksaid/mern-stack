@@ -1,9 +1,10 @@
 import React from "react";
 import { Button } from "../../components";
+import "./home.scss";
 
 const Home = () => {
 	return (
-		<div>
+		<div className="home-page-wrapper">
 			<div className="create-wrapper">
 				<Button title="create blog post" />
 			</div>
