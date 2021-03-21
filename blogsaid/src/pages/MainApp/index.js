@@ -25,7 +25,6 @@ const MainApp = () => {
 					</Switch>
 				</Router>
 			</div>
-
 			<Footer />
 		</div>
 	);
