@@ -9,6 +9,9 @@ const Home = () => {
 				<Button title="create blog post" />
 			</div>
 			<BlogItem />
+			<BlogItem />
+			<BlogItem />
+			<BlogItem />
 			<p>Pagination</p>
 		</div>
 	);
