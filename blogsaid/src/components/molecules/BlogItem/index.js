@@ -1,5 +1,6 @@
 import React from "react";
 import { RegisterBg } from "../../../assets";
+import "./blogItem.scss";
 
 const BlogItem = () => {
 	return (
