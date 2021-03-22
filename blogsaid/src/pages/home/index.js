@@ -1,5 +1,5 @@
 import React from "react";
-import { BlogItem, Button } from "../../components";
+import { BlogItem, Button, Gap } from "../../components";
 import "./home.scss";
 
 const Home = () => {
@@ -8,10 +8,13 @@ const Home = () => {
 			<div className="create-wrapper">
 				<Button title="create blog post" />
 			</div>
-			<BlogItem />
-			<BlogItem />
-			<BlogItem />
-			<BlogItem />
+			<Gap height={20} />
+			<div className="content-wrapper">
+				<BlogItem />
+				<BlogItem />
+				<BlogItem />
+				<BlogItem />
+			</div>
 			<p>Pagination</p>
 		</div>
 	);

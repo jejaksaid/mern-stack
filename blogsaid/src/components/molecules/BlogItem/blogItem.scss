@@ -1,7 +1,7 @@
 .blog-item {
-	width: 40%;
+	width: calc(50% - 10px);
 	border-radius: 8px;
-	margin-bottom: 12px;
+	margin-bottom: 20px;
 	overflow: hidden;
 	box-shadow: 5px 6px 14px rgba(0, 0, 0, 0.2);
 	.image-thumb {
