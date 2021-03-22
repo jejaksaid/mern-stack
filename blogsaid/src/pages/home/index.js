@@ -15,7 +15,11 @@ const Home = () => {
 				<BlogItem />
 				<BlogItem />
 			</div>
-			<p>Pagination</p>
+			<div className="pagination">
+				<Button title="Previous" />
+				<Gap height={20} />
+				<Button title="Next" />
+			</div>
 		</div>
 	);
 };
