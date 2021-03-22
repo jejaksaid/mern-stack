@@ -12,4 +12,9 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
+
+	.pagination {
+		max-width: 400px;
+		display: flex;
+	}
 }
