@@ -17,9 +17,10 @@ const Home = () => {
 			</div>
 			<div className="pagination">
 				<Button title="Previous" />
-				<Gap height={20} />
+				<Gap width={20} />
 				<Button title="Next" />
 			</div>
+			<Gap height={20} />
 		</div>
 	);
 };
