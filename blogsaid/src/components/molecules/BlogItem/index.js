@@ -19,7 +19,7 @@ const BlogItem = () => {
 					laborum repellat. Ipsa.
 					<Button
 						title="View Detail"
-						onClick={() => history.push("/blog-detail")}
+						onClick={() => history.push("/detail-blog")}
 					/>
 				</p>
 			</div>
