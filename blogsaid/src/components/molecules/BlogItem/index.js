@@ -1,8 +1,11 @@
 import React from "react";
 import { RegisterBg } from "../../../assets";
+import { Button } from "../../atoms";
 import "./blogItem.scss";
+import { useHistory } from "react-router-dom";
 
 const BlogItem = () => {
+	const history = useHistory();
 	return (
 		<div className="blog-item">
 			<img className="image-thumb" src={RegisterBg} alt="post" />
@@ -14,6 +17,10 @@ const BlogItem = () => {
 					iste hic autem maxime excepturi natus accusantium soluta pariatur
 					magni officiis quae esse cupiditate, corporis dolore est ratione,
 					laborum repellat. Ipsa.
+					<Button
+						title="View Detail"
+						onClick={() => history.push("/blog-detail")}
+					/>
 				</p>
 			</div>
 		</div>
