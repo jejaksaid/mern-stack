@@ -7,7 +7,7 @@ const Header = () => {
 	return (
 		<div className="header">
 			<p className="logo-app">BlogSaid</p>
-			<p className="menu-item" onClick={() => history.push("/")}>
+			<p className="menu-item" onClick={() => history.push("/login")}>
 				Logout
 			</p>
 		</div>
