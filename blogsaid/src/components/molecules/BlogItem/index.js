@@ -1,6 +1,6 @@
 import React from "react";
 import { RegisterBg } from "../../../assets";
-import { Button } from "../../atoms";
+import { Button, Gap } from "../../atoms";
 import "./blogItem.scss";
 import { useHistory } from "react-router-dom";
 
@@ -17,6 +17,7 @@ const BlogItem = () => {
 					iste hic autem maxime excepturi natus accusantium soluta pariatur
 					magni officiis quae esse cupiditate, corporis dolore est ratione,
 					laborum repellat. Ipsa.
+					<Gap height={20} />
 					<Button
 						title="View Detail"
 						onClick={() => history.push("/detail-blog")}

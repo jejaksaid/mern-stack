@@ -2,7 +2,7 @@ import React from "react";
 import { RegisterBg } from "../../assets";
 import "./detailBlog.scss";
 import { useHistory } from "react-router-dom";
-import { Link } from "../../components";
+import { Gap, Link } from "../../components";
 
 const DetailBlog = () => {
 	const history = useHistory();
@@ -17,6 +17,7 @@ const DetailBlog = () => {
 				eaque voluptatibus id, necessitatibus fugit minima accusamus possimus
 				nisi iste reprehenderit!
 			</p>
+			<Gap height={20} />
 			<Link title="kembali ke home" onClick={() => history.push("/")} />
 		</div>
 	);
