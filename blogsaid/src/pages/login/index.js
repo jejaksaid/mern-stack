@@ -19,7 +19,10 @@ const Login = () => {
 				<Gap height={50} />
 				<Button title="Login" onClick={() => history.push("/")} />
 				<Gap height={100} />
-				<Link title="Daftar akun baru" />
+				<Link
+					title="Daftar akun baru"
+					onClick={() => history.push("/register")}
+				/>
 			</div>
 		</div>
 	);
