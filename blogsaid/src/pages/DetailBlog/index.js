@@ -1,8 +1,11 @@
 import React from "react";
 import { RegisterBg } from "../../assets";
 import "./detailBlog.scss";
+import { useHistory } from "react-router-dom";
+import { Link } from "../../components";
 
 const DetailBlog = () => {
+	const history = useHistory();
 	return (
 		<div className="detail-blog-wrapper">
 			<img className="img-cover" src={RegisterBg} alt="thumb" />
@@ -14,6 +17,7 @@ const DetailBlog = () => {
 				eaque voluptatibus id, necessitatibus fugit minima accusamus possimus
 				nisi iste reprehenderit!
 			</p>
+			<Link title="kembali ke home" onClick={() => history.push("/")} />
 		</div>
 	);
 };
