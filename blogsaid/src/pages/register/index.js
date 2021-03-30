@@ -22,7 +22,7 @@ const Register = () => {
 				<Gap height={50} />
 				<Button title="Register" onClick={() => history.push("/login")} />
 				<Gap height={100} />
-				<Link title="Kembali ke Login" />
+				<Link title="Kembali ke Login" onClick={() => history.push("/login")} />
 			</div>
 		</div>
 	);
