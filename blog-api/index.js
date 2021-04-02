@@ -16,6 +16,10 @@ router.get("/customers", (req, res, next) => {
 	res.json({ title: "customer 1" });
 	next();
 });
+
+router.delete("/users", (req, res, next) => {
+	res.json({ user: "user 1" });
+});
 app.use("/", router);
 
 // GET '/users' ==> [{name: said}]
