@@ -4,8 +4,6 @@ const app = express();
 
 app.use(() => {
 	console.log("hello server...");
-	console.log("hello again");
-	console.log("hello 3");
 });
 
 app.listen(4000);
