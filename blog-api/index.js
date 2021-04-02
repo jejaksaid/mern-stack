@@ -4,12 +4,18 @@ const app = express();
 const router = express.Router();
 
 router.use("/products", (req, res, next) => {
-	console.log("url: ", req.originalUrl);
-	console.log("method: ", req.method);
 	res.json({ name: "saidramadhan", email: "saidramadhan3@gmail.com" });
 	next();
 });
 
+router.use("/price", (req, res, next) => {
+	res.json({ price: 10000000 });
+	next();
+});
+router.get("/customers", (req, res, next) => {
+	res.json({ title: "customer 1" });
+	next();
+});
 app.use("/", router);
 
 // GET '/users' ==> [{name: said}]
