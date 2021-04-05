@@ -2,9 +2,9 @@ const express = require("express");
 
 const router = express.Router();
 
-router.use("/products", (req, res, next) => {
-	res.json({ name: "saidramadhan", email: "saidramadhan3@gmail.com" });
-	next();
-});
+const productsController = require("../controllers/products");
+
+// CREATE -> POST
+router.use("/product", productsController.createProduct);
 
 module.exports = router;
