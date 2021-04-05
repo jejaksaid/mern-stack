@@ -1,6 +1,6 @@
 exports.createProduct = (req, res, next) => {
 	res.json({
-		message: "Create Product Success!!!",
+		message: "Create Product Success!",
 		data: {
 			id: 1,
 			name: "Liquid Paradewa",
@@ -12,7 +12,7 @@ exports.createProduct = (req, res, next) => {
 
 exports.getAllProducts = (req, res, next) => {
 	res.json({
-		message: "Get All Products Success",
+		message: "Get All Products Success!!!",
 		data: [
 			{
 				id: 1,
