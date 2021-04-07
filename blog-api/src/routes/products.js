@@ -4,7 +4,7 @@ const router = express.Router();
 
 const productsController = require("../controllers/products");
 
-// CREATE -> POST
+// CREATE -> POST : localhost:4000/v1/customer/product
 router.post("/product", productsController.createProduct);
 
 // READ -> GET
