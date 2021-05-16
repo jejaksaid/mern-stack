@@ -1,10 +1,10 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 
 const app = express();
 const productRoutes = require("./src/routes/products");
+const authRoutes = require("./src/routes/auth");
 
-app.use(express.json());
+app.use(express.json);
 
 app.use((req, res, next) => {
 	res.setHeader("Access-Control-Allow-Origin", "*");
@@ -17,5 +17,6 @@ app.use((req, res, next) => {
 });
 
 app.use("/v1/customer", productRoutes);
+app.use("v1/auth", authRoutes);
 
 app.listen(4000);
