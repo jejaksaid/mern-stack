@@ -8,7 +8,9 @@ exports.createBlogPost = (req, res, next) => {
 	const errors = validationResult(req);
 
 	if (!errors.isEmpty()) {
-		const err = new Error("Invalide Value");
+		const err = new Error("Input Value Tidak Sesuai");
+		err.errorStatus = 400;
+		err.data = errors.array();
 		throw err;
 	}
 
