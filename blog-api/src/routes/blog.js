@@ -9,7 +9,10 @@ const blogController = require("../controllers/blog");
 
 router.post(
 	"/post",
-	[body("title").isLength({ min: 5 }), body("body").isLength({ min: 5 })],
+	[
+		body("title").isLength({ min: 5 }).withMessage("input title tidak sesuai"),
+		body("body").isLength({ min: 5 }).withMessage("input body tidak sesuai"),
+	],
 	blogController.createBlogPost
 );
 
