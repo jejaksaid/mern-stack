@@ -31,7 +31,7 @@ app.use((error, req, res, next) => {
 
 mongoose
 	.connect(
-		"mongodb+srv://jejaksaid:jcpOq0OJ1dzlsPsR@cluster0.3rjlo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+		"mongodb+srv://jejaksaid:jcpOq0OJ1dzlsPsR@cluster0.3rjlo.mongodb.net/blog?retryWrites=true&w=majority",
 		{ useNewUrlParser: true, useUnifiedTopology: true }
 	)
 	.then(() => {
